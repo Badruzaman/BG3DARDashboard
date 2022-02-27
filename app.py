@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, abort
 
-app = Flask(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
